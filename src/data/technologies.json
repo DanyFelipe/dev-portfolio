@@ -1,0 +1,79 @@
+[
+  {
+    "id": "aceternity-ui",
+    "name": "Aceternity UI",
+    "description": "Beautiful UI components and animations for modern web applications",
+    "categories": ["frontend", "ui"],
+    "url": "https://ui.aceternity.com"
+  },
+  {
+    "id": "dark-mode-design",
+    "name": "Dark Mode Design",
+    "description": "Professional dark theme design system and components",
+    "categories": ["frontend", "design", "templates"],
+    "url": "https://darkmodedesign.com"
+  },
+  {
+    "id": "bentogrids",
+    "name": "Bentogrids",
+    "description": "Modern CSS Grid layouts and responsive design components",
+    "categories": ["frontend", "css", "layout"],
+    "url": "https://bentogrids.com"
+  },
+  {
+    "id": "shadcn",
+    "name": "shadcn/ui",
+    "description": "Re-usable components built with Radix UI and Tailwind CSS",
+    "categories": ["frontend", "ui", "components"],
+    "url": "https://ui.shadcn.com"
+  },
+  {
+    "id": "patterncraft",
+    "name": "PatternCraft",
+    "description": "Advanced UI patterns and design system components",
+    "categories": ["frontend", "patterns", "background"],
+    "url": "https://patterncraft.fun/"
+  },
+  {
+    "id": "refero",
+    "name": "Refero",
+    "description": "Design inspiration and UI reference collection",
+    "categories": ["frontend", "ign", "inspiration"],
+    "url": "https://refero.design/"
+  },
+  {
+    "id": "stack-sorted",
+    "name": "Stack Sorted",
+    "description": "Curated collection of the best web development tools and resources",
+    "categories": ["frontend", "ui"],
+    "url": "https://stacksorted.com/"
+  },
+  {
+    "id": "minimal-gallery",
+    "name": "Minimal Gallery",
+    "description": "Curated source of website design inspiration and templates",
+    "categories": ["frontend", "templates", "inspiration"],
+    "url": "https://minimal.gallery/templates/"
+  },
+  {
+    "id": "flowbite",
+    "name": "Flowbite",
+    "description": "Source UI components built with Tailwind CSS",
+    "categories": ["frontend", "ui"],
+    "url": "https://flowbite.com/blocks/"
+  },
+  {
+    "id": "untitled-ui",
+    "name": "Untitled UI",
+    "description": "Comprehensive React component library for building modern application interfaces",
+    "categories": ["frontend", "ui"],
+    "url": "https://www.untitledui.com/react/application-ui"
+  },
+  {
+    "id": "layout-generator",
+    "name": "Layout Generator",
+    "description": "CSS Layout Generator for creating responsive grid and flexbox layouts",
+    "categories": ["frontend", "design", "devtool"],
+    "url": "https://layout.bradwoods.io/"
+  }
+] 

@@ -1,0 +1,16 @@
+---
+import ProjectCard from "@/components/ProjectCard.astro";
+import projects from "../data/projects.json";
+---
+<header class="w-full max-w-6xl mx-auto px-2 h-10 flex items-center justify-start mt-32">
+  <span class="text-zinc-400 text-base md:text-lg font-mono font-light pt-2 mb-4">// Projects</span>
+</header>
+<main class="w-full max-w-6xl mx-auto px-2 flex flex-col gap-60">
+  {projects.map(project => (
+    <div class="w-full max-w-sm mx-auto md:max-w-none">
+      <ProjectCard {...project} />
+    </div>
+  ))}
+  <footer class="w-full min-h-0"></footer>
+</main>
+  

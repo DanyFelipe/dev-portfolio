@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Blender Pro';
+  src: url('/fonts/Blender-Pro-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --font-main: 'Blender Pro', 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --color-primary: #6366f1;
+  --color-primary-dark: #3730a3;
+  --color-accent: #f472b6;
+  --color-background: #ffffff;
+  --color-surface: #f3f4f6;
+  --color-text: #18181b;
+  --glass-bg: rgba(17, 17, 17, 0.40); /* fondo negro translúcido */
+  --glass-blur: blur(16px);
+  --glass-border: 1px solid rgba(255,255,255,0.18);
+}
+
+html.dark {
+  --color-background: #000000;
+  --color-surface: #27272a;
+  --color-text: #f3f4f6;
+  --color-primary: #6366f1;
+  --color-primary-dark: #a5b4fc;
+  --color-accent: #f472b6;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.play-btn {
+  background: white;
+  color: black;
+  border: 1px solid rgba(255,255,255,0.20);
+  transition: all 0.15s;
+}
+.play-btn:hover {
+  background: var(--glass-bg);
+  color: white;
+  border-color: rgba(255,255,255,0.60);
+}
+
