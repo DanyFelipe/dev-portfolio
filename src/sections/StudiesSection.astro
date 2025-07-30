@@ -1,0 +1,21 @@
+---
+import StudyCard from "@/components/StudyCard.astro";
+import studies from "@/data/studies.json";
+---
+<section class="w-full py-16 px-4 md:px-20 lg:px-40">
+  <header class="mb-12">
+  </header>
+  <main>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {studies.map(study => (
+        <div class="flex justify-center">
+          <StudyCard {...study} style="width:340px; min-width:280px; max-width:100%;" />
+        </div>
+      ))}
+    </div>
+  </main>
+  <footer class="mt-16 text-center text-base text-surface opacity-60">
+    Última actualización: Julio 2025
+  </footer>
+</section>
+

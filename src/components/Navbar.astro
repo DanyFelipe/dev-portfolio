@@ -3,16 +3,20 @@ import MobileNavbar from './MobileNavbar.jsx';
 ---
 
 <!-- Desktop navbar -->
-<nav class="hidden md:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/60 dark:bg-zinc-900/60 shadow-xl backdrop-blur-lg border border-zinc-200 dark:border-zinc-800 flex-col items-center justify-center py-0">
+<nav class="hidden md:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 flex-col items-center justify-center py-0"
+  style="background: var(--glass-bg); border: var(--glass-border); backdrop-filter: var(--glass-blur);">
   <ul class="flex justify-center">
     <li>
-      <a href="/" class="inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base md:text-2xl tracking-wide text-zinc-700 dark:text-zinc-200">// HOME</a>
+      <a href="/" class="inline-block hover:bg-white hover:text-black text-[var(--color-surface)] transition-colors duration-150 py-2 px-6 text-base md:text-base tracking-wide">PRINCIPAL</a>
     </li>
     <li>
-      <a href="/projects" class="inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base md:text-2xl tracking-wide text-zinc-700 dark:text-zinc-200">// PROJECTS</a>
+      <a href="/projects" class="inline-block hover:bg-white hover:text-black text-[var(--color-surface)] transition-colors duration-150 py-2 px-6 text-base md:text-base tracking-wide">PROYECTOS</a>
     </li>
     <li>
-      <a href="/notebook" class="inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base md:text-2xl tracking-wide text-zinc-700 dark:text-zinc-200">// NOTEBOOK</a>
+      <a href="/experience" class="inline-block hover:bg-white hover:text-black text-[var(--color-surface)] transition-colors duration-150 py-2 px-6 text-base md:text-base tracking-wide">EXPERIENCIA</a>
+    </li>
+    <li>
+      <a href="/studies" class="inline-block hover:bg-white hover:text-black text-[var(--color-surface)] transition-colors duration-150 py-2 px-6 text-base md:text-base tracking-wide">ESTUDIOS</a>
     </li>
   </ul>
 </nav>

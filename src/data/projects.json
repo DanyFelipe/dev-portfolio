@@ -1,42 +1,18 @@
 [
   {
     "title": "1. ALIEN CHASERS GX",
-    "tag": "Shooter 2D | Godot | 2024",
-    "description": "Shooter vertical con power-ups, jefes y gráficos retro. Desarrollado en Godot.",
+    "tag": "JavaScript, GameMaker Studio 2",
+    "description": "Videojuego web de pixel art del género shoot 'em up desarrollado para la OperaGX GameJam de 2021",
     "image": "/images/alien-chasers.png",
     "hoverGif": "/gifs/alien-chasers.gif",
     "href": "https://gamejolt.com/games/AlienChasers/637390"
   },
   {
-    "title": "2. PORTFOLIO WEBSITE",
-    "tag": "Astro | Tailwind | 2024",
+    "title": "2. SITIO WEB PORTAFOLIO",
+    "tag": "Astro, React, Tailwind",
     "description": "Sitio web personal para mostrar mis proyectos y habilidades como desarrollador.",
-    "image": "/images/portfolio.jpg",
-    "hoverGif": "/gifs/alien-chasers.gif",
-    "href": "#"
-  },
-  {
-    "title": "3. TASK MANAGER",
-    "tag": "React | Django | 2023",
-    "description": "Aplicación para gestión de tareas con autenticación y notificaciones en tiempo real.",
-    "image": "/images/task-manager.jpg",
-    "hoverGif": "/gifs/alien-chasers.gif",
-    "href": "#"
-  },
-  {
-    "title": "4. GAME JAM ENTRY",
-    "tag": "Unity | C# | 2022",
-    "description": "Juego de plataformas creado en 48 horas para una game jam internacional.",
-    "image": "/images/game-jam.jpg",
-    "hoverGif": "/gifs/alien-chasers.gif",
-    "href": "#"
-  },
-  {
-    "title": "5. E-COMMERCE DEMO",
-    "tag": "Next.js | Stripe | 2023",
-    "description": "Demo de tienda online con pagos integrados y panel de administración.",
-    "image": "/images/ecommerce.jpg",
+    "image": "/images/alien-chasers.png",
     "hoverGif": "/gifs/alien-chasers.gif",
     "href": "#"
   }
-] 
+]

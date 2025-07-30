@@ -12,7 +12,8 @@ const {
 {href ? (
   <a
     href={href}
-    class={`inline-block group bg-white text-black dark:bg-white dark:text-black border border-zinc-200 dark:border-zinc-800 shadow-md backdrop-blur-lg py-2 px-6 text-base md:text-xl tracking-wide font-bold transition-colors duration-150 hover:bg-transparent hover:text-white ${className}`}
+    class={`inline-block group border border-zinc-200 dark:border-zinc-800 shadow-md backdrop-blur-lg py-2 px-6 text-sm md:text-base tracking-wide font-semibold transition-colors duration-150 bg-[var(--color-white)] text-[var(--color-black)] hover:bg-[var(--gloss)] hover:text-[var(--color-white)] ${className}`}
+    style="font-family: var(--font-main);"
     {...(download ? { download: true } : {})}
     {...rest}
   >
@@ -21,7 +22,8 @@ const {
 ) : (
   <button
     type={type}
-    class={`inline-block group bg-white text-black dark:bg-white dark:text-black border border-zinc-200 dark:border-zinc-800 shadow-md backdrop-blur-lg py-2 px-6 text-base md:text-xl tracking-wide font-bold transition-colors duration-150 hover:bg-transparent hover:text-white ${className}`}
+    class={`inline-block group border border-zinc-200 dark:border-zinc-800 shadow-md backdrop-blur-lg py-2 px-6 text-sm md:text-base tracking-wide font-semibold transition-colors duration-150 bg-[var(--color-white)] text-[var(--color-black)] hover:bg-[var(--gloss)] hover:text-[var(--color-white)] ${className}`}
+    style="font-family: var(--font-main);"
     {...rest}
   >
     <slot />

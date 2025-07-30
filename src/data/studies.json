@@ -1,0 +1,30 @@
+[
+  {
+    "imagen": "/images/studies/placeholder.webp",
+    "nombre": "Tecnólogo en Desarrollo de Software",
+    "institucion": "Uniminuto",
+    "año": "2020",
+    "descripcion": "Tecnología enfocada en el desarrollo de software, abarcando programación, bases de datos y metodologías ágiles."
+  },
+  {
+    "imagen": "/images/studies/placeholder.webp",
+    "nombre": "Big Data Fundamentals",
+    "institucion": "Certmind",
+    "año": "2025",
+    "descripcion": "Diplomado de introducción a los conceptos fundamentales de Big Data, incluyendo herramientas y técnicas para el procesamiento de datos masivos."
+  },
+  {
+    "imagen": "/images/studies/placeholder.webp",
+    "nombre": "Diplomado en desarrollo de apliaciones web",
+    "institucion": "Univerisidad Industrial de Santander",
+    "año": "2022",
+    "descripcion": "Diplomado MisionTIC en desarrollo de aplicaciones web, abarcando tecnologías modernas y en desarrollo frontend y backend"
+  },
+  {
+    "imagen": "/images/studies/placeholder.webp",
+    "nombre": "Curso Oracle de Java y Springboot",
+    "institucion": "Alura LATAM",
+    "año": "2023",
+    "descripcion": "Diplomado MisionTIC en desarrollo de aplicaciones web, abarcando tecnologías modernas y en desarrollo frontend y backend"
+  }
+]

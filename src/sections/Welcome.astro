@@ -1,89 +1,40 @@
 ---
 import Button from "@/components/Button.astro";
-import LineDivisor from "@/components/LineDivisor.astro";
-import TypewriterEffect from "@/components/TypewriterEffect.jsx";
 import IconCarousel from "@/components/IconCarousel.jsx";
 ---
 
-<div class="mx-auto max-w-7xl px-12 flex flex-col min-h-screen">
-  <div class="flex-1 flex flex-col items-center text-center md:items-start md:text-left justify-center mt-20">
-    <div class="text-5xl md:text-6xl font-extrabold text-white mb-2">
-      <div>HI, I'M DANIEL FELIPE</div>
-      <div class="min-h-[3rem] sm:min-h-0">
-        <!-- Reserva espacio en móviles -->
-        AND I AM
-      </div>
-    </div>
-    <div
-      class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-2 min-h-[3.5rem]"
-    >
-      <TypewriterEffect
-        client:only="react"
-        texts={[
-          "FRONTEND DEVELOPER",
-          "BACKEND DEVELOPER",
-          "VIDEOGAMES DEVELOPER",
-        ]}
-        delay={40}
-        className="inline-block text-white"
-      />
-    </div>
-    <div
-      class="text-lg md:text-2xl text-zinc-700 dark:text-zinc-200 font-medium mb-6 mt-4"
-    >
-      Welcome to my developer portfolio
-    </div>
-    <div>
+<section class="w-full min-h-screen flex flex-col justify-between px-12 sm:px-12 md:px-20 lg:px-40 py-8 sm:py-12 md:py-16">
+  <div class="max-w-4xl w-full flex flex-col gap-6 sm:gap-8 items-center sm:items-start justify-center flex-1 text-center sm:text-left">
+    <h1 class="text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-light text-surface mb-2 tracking-tight w-full">
+      Hola, soy Daniel Felipe
+    </h1>
+    <p class="text-lg sm:text-lg md:text-2xl text-surface font-light leading-relaxed mb-4 w-full">
+      Soy Ingeniero de Sistemas apasionado por crear aplicaciones web modernas, servicios backend y experiencias digitales. Me encanta resolver problemas, aprender nuevas tecnologías y colaborar en equipos creativos.
+    </p>
+    <div class="w-full flex justify-center sm:justify-start">
       <Button href="/files/CV - Daniel Felipe Pérez.pdf" download>
-        _DOWNLOAD CV
+        DESCARGAR CV
       </Button>
     </div>
-    <div class="flex flex-row items-center mt-6">
-      <div class="flex flex-col sm:flex-row gap-0 w-full">
-        <a
-          href="https://github.com/DanyFelipe"
-          target="_blank"
-          rel="noopener"
-          class="flex-1 text-center inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base tracking-wide text-white"
-        >
-          _GITHUB
-        </a>
-        <a
-          href="https://www.linkedin.com/in/daniel-felipe-4010b3232"
-          target="_blank"
-          rel="noopener"
-          class="flex-1 text-center inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base tracking-wide text-white"
-        >
-          _LINKEDIN
-        </a>
-        <a
-          href="https://www.instagram.com/danylfelipe/"
-          target="_blank"
-          rel="noopener"
-          class="flex-1 text-center inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base tracking-wide text-white"
-        >
-          _INSTAGRAM
-        </a>
-        <a
-          href="https://instagram.com/tu_usuario"
-          target="_blank"
-          rel="noopener"
-          class="flex-1 text-center inline-block hover:bg-white hover:text-black transition-colors duration-150 py-2 px-6 text-base tracking-wide text-white"
-        >
-          _MAIL
-        </a>
-      </div>
-    </div>
+    <nav class="flex flex-row gap-4 w-full items-center justify-center sm:justify-start">
+      <a href="https://github.com/DanyFelipe" target="_blank" rel="noopener" aria-label="GitHub" class="group p-2">
+        <iconify-icon icon="mdi:github" width="32" height="32" class="transition-transform duration-200 group-hover:scale-125 text-surface" />
+      </a>
+      <a href="https://www.linkedin.com/in/daniel-felipe-4010b3232" target="_blank" rel="noopener" aria-label="LinkedIn" class="group p-2">
+        <iconify-icon icon="mdi:linkedin" width="32" height="32" class="transition-transform duration-200 group-hover:scale-125 text-surface" />
+      </a>
+      <a href="https://www.instagram.com/danylfelipe/" target="_blank" rel="noopener" aria-label="Instagram" class="group p-2">
+        <iconify-icon icon="mdi:instagram" width="32" height="32" class="transition-transform duration-200 group-hover:scale-125 text-surface" />
+      </a>
+    </nav>
   </div>
-
-  <div class="pb-10 text-white w-full mt-0 mb-0">
-    <div class="text-center text-white mb-1">
-      <div class="text-lg md:text-xl font-medium">My devtools</div>
+  <footer class="pb-1 text-white w-full mt-0 mb-0">
+    <div class="text-center mb-1">
+      <div class="text-base sm:text-lg md:text-xl font-medium">Mis herramientas de desarrollo</div>
       <div class="w-full flex justify-center">
         <IconCarousel client:only="react" />
       </div>
     </div>
-    <LineDivisor class="mt-4" />
-  </div>
-</div>
+  </footer>
+</section>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

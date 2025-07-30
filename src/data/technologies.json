@@ -2,78 +2,106 @@
   {
     "id": "aceternity-ui",
     "name": "Aceternity UI",
-    "description": "Beautiful UI components and animations for modern web applications",
-    "categories": ["frontend", "ui"],
+    "description": "React UI components and animations for modern web applications",
+    "categories": ["frontend", "ui", "components"],
     "url": "https://ui.aceternity.com"
   },
   {
     "id": "dark-mode-design",
     "name": "Dark Mode Design",
-    "description": "Professional dark theme design system and components",
-    "categories": ["frontend", "design", "templates"],
+    "description": "Visually rich dark-mode pages with a strong artistic direction.",
+    "categories": ["frontend", "design", "inspiration"],
     "url": "https://darkmodedesign.com"
   },
   {
     "id": "bentogrids",
     "name": "Bentogrids",
-    "description": "Modern CSS Grid layouts and responsive design components",
-    "categories": ["frontend", "css", "layout"],
+    "description": "Pages with bento design and visually appealing",
+    "categories": ["frontend", "design", "inspiration"],
     "url": "https://bentogrids.com"
   },
   {
     "id": "shadcn",
     "name": "shadcn/ui",
-    "description": "Re-usable components built with Radix UI and Tailwind CSS",
+    "description": "Repository of styled UI components for web pages",
     "categories": ["frontend", "ui", "components"],
     "url": "https://ui.shadcn.com"
   },
   {
     "id": "patterncraft",
     "name": "PatternCraft",
-    "description": "Advanced UI patterns and design system components",
-    "categories": ["frontend", "patterns", "background"],
+    "description": "Library of simple but functional backgrounds for web pages",
+    "categories": ["frontend", "ui"],
     "url": "https://patterncraft.fun/"
   },
   {
     "id": "refero",
     "name": "Refero",
-    "description": "Design inspiration and UI reference collection",
-    "categories": ["frontend", "ign", "inspiration"],
+    "description": "Section and dashboard designs for visually impactful pages",
+    "categories": ["frontend", "design", "inspiration"],
     "url": "https://refero.design/"
-  },
-  {
-    "id": "stack-sorted",
-    "name": "Stack Sorted",
-    "description": "Curated collection of the best web development tools and resources",
-    "categories": ["frontend", "ui"],
-    "url": "https://stacksorted.com/"
   },
   {
     "id": "minimal-gallery",
     "name": "Minimal Gallery",
-    "description": "Curated source of website design inspiration and templates",
-    "categories": ["frontend", "templates", "inspiration"],
+    "description": "Pages with photographic design and visually appealing",
+    "categories": ["frontend", "design", "inspiration"],
     "url": "https://minimal.gallery/templates/"
   },
   {
     "id": "flowbite",
     "name": "Flowbite",
-    "description": "Source UI components built with Tailwind CSS",
-    "categories": ["frontend", "ui"],
+    "description": "UI components repository for web pages using Tailwind",
+    "categories": ["frontend", "ui", "components"],
     "url": "https://flowbite.com/blocks/"
   },
   {
     "id": "untitled-ui",
     "name": "Untitled UI",
-    "description": "Comprehensive React component library for building modern application interfaces",
-    "categories": ["frontend", "ui"],
+    "description": "React components and blocks for UI, with high design",
+    "categories": ["frontend", "ui", "components"],
     "url": "https://www.untitledui.com/react/application-ui"
   },
   {
-    "id": "layout-generator",
-    "name": "Layout Generator",
-    "description": "CSS Layout Generator for creating responsive grid and flexbox layouts",
+    "id": "gsap",
+    "name": "GSAP",
+    "description": "A wildly robust JavaScript animation library built for professionals",
+    "categories": ["frontend", "library"],
+    "url": "https://www.untitledui.com/react/application-ui"
+  },
+  {
+    "id": "tailwind-grid-generator",
+    "name": "Tailwind Grid Generator",
+    "description": "Tool that helps developers create custom Tailwind grid layouts more easily",
     "categories": ["frontend", "design", "devtool"],
+    "url": "https://layout.bradwoods.io/"
+  },
+  {
+    "id": "squoosh",
+    "name": "Squoosh",
+    "description": "Online image compressor for different formats",
+    "categories": ["devtool", "optimization"],
+    "url": "https://squoosh.app/"
+  },
+  {
+    "id": "ezgif",
+    "name": "EZGif",
+    "description": "Online GIF image compressor and editor",
+    "categories": ["devtool", "optimization"],
+    "url": "https://excalidraw.com/"
+  },
+  {
+    "id": "ttf-to-wolf",
+    "name": "TTF To Wolf",
+    "description": "TTF font format converter to WOLF for web page optimization",
+    "categories": ["devtool", "optimization"],
+    "url": "https://excalidraw.com/"
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "description": "Online board with different tools and aesthetically pleasing",
+    "categories": ["devtool"],
     "url": "https://layout.bradwoods.io/"
   }
 ] 
