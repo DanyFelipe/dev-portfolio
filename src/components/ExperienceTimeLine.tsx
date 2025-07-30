@@ -17,7 +17,7 @@ export function TimelineDemo() {
             title: "2025",
             content: (
                 <div>
-                    <h4 className="text-left text-5xl uppercase font-light text-surface font-primary mb-2">Administrador de Plataforma, Freelancer</h4>
+                    <h4 className="text-left text-3xl md:text-5xl uppercase font-light text-surface font-primary mb-2">Administrador de Plataforma, Freelancer</h4>
                     <div className="text-left text-lg font-semibold text-surface font-primary mb-4 opacity-90">Instituto Odres Nuevos, Universidad Horizonte, CENTEC</div>
                     <p className="mb-8 mt-8 text-lg font-normal text-surface font-primary">
                         Como superadministrador, lideré la gestión y configuración avanzada de la plataforma Q10
@@ -50,7 +50,7 @@ export function TimelineDemo() {
             content: (
                 <>
                     <div>
-                        <h4 className="text-left text-5xl uppercase font-light text-surface font-primary mb-2">Coordinador de Recursos Tecnológicos</h4>
+                        <h4 className="text-left text-3xl md:text-5xl uppercase font-light text-surface font-primary mb-2">Coordinador de Recursos Tecnológicos</h4>
                         <div className="text-left text-lg font-semibold text-surface font-primary mb-4 opacity-90">Corporación Iberoamericana de Ciencia y Tecnología CIBERCTEC - Villavicencio Meta</div>
                         <p className="mb-8 mt-8 text-lg font-normal text-surface font-primary">
                             Responsable del área de TI de la empresa. Gestioné la resolución de incidencias críticas que afectaban
@@ -94,7 +94,7 @@ export function TimelineDemo() {
             title: "2022",
             content: (
                 <div>
-                    <h4 className="text-left text-5xl uppercase font-light text-surface font-primary mb-2">Content Manager y renderista 3D</h4>
+                    <h4 className="text-left text-3xl md:text-5xl uppercase font-light text-surface font-primary mb-2">Content Manager y renderista 3D</h4>
                     <div className="text-left text-lg font-semibold text-surface font-primary mb-4 opacity-90">Bimcom - Acacías Meta</div>
                     <p className="mb-8 mt-8 text-lg font-normal text-surface font-primary">
                         Desempeñé un rol clave en la creación de contenido digital para proyectos de infraestructura,
@@ -145,7 +145,7 @@ export function TimelineDemo() {
             content: (
                 <>
                     <div>
-                        <h4 className="text-left text-5xl uppercase font-light text-surface font-primary mb-2">Digital Product Designer</h4>
+                        <h4 className="text-left text-3xl md:text-5xl uppercase font-light text-surface font-primary mb-2">Digital Product Designer</h4>
                         <div className="text-left text-lg font-semibold text-surface font-primary mb-4 opacity-90">LiENZO - Villavicencio Meta</div>
                         <p className="mb-8 mt-8 text-lg font-normal text-surface font-primary">
                             Como diseñador de producto digital, lideré la creación de interfaces centradas en el usuario,
