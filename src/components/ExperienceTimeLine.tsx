@@ -149,11 +149,9 @@ export function TimelineDemo() {
                         <div className="text-left text-lg font-semibold text-surface font-primary mb-4 opacity-90">LiENZO - Villavicencio Meta</div>
                         <p className="mb-8 mt-8 text-lg font-normal text-surface font-primary">
                             Como diseñador de producto digital, lideré la creación de interfaces centradas en el usuario,
-                            integrando diseño UI/UX con estrategias de branding visual y marketing digital. Conceptualicé y desarrollé
-                            experiencias digitales coherentes con la identidad de marca, enfocadas en la conversión, retención
+                            integrando diseño UI/UX con estrategias de branding visual y marketing digital.
                             y posicionamiento. Colaboré con equipos creativos y técnicos para materializar productos visuales consistentes
-                            en campañas, landing pages y piezas audiovisuales, garantizando impacto visual y alineación estratégica en todos
-                             los canales digitales.
+                            en campañas, landing pages y piezas audiovisuales, garantizando impacto visual.
                         </p>
                         <div className="grid grid-cols-2 gap-4">
                             <img
@@ -189,7 +187,7 @@ export function TimelineDemo() {
             {/* Modal for enlarged image */}
             {showModal && modalImg && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 transition-opacity duration-300 animate-fadeIn"
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--glass-bg)] bg-opacity-80 backdrop-blur-lg transition-opacity duration-300 animate-fadeIn"
                     onClick={closeModal}
                 >
                     <div
@@ -203,7 +201,7 @@ export function TimelineDemo() {
                         />
                         <button
                             onClick={closeModal}
-                            className="absolute top-4 right-4 text-white text-3xl font-bold bg-black bg-opacity-40 rounded-full px-3 py-1 hover:bg-opacity-80 transition cursor-pointer"
+                            className="absolute top-4 right-4 text-white text-3xl font-bold transition cursor-pointer"
                             aria-label="Cerrar"
                         >
                             &times;

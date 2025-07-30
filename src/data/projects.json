@@ -6,13 +6,5 @@
     "image": "/images/alien-chasers.png",
     "hoverGif": "/gifs/alien-chasers.gif",
     "href": "https://gamejolt.com/games/AlienChasers/637390"
-  },
-  {
-    "title": "2. SITIO WEB PORTAFOLIO",
-    "tag": "Astro, React, Tailwind",
-    "description": "Sitio web personal para mostrar mis proyectos y habilidades como desarrollador.",
-    "image": "/images/alien-chasers.png",
-    "hoverGif": "/gifs/alien-chasers.gif",
-    "href": "#"
   }
 ]
