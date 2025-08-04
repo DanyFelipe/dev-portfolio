@@ -1,0 +1,91 @@
+---
+export interface Props {
+  activeTab?: string;
+}
+
+const { activeTab = "experience" } = Astro.props;
+---
+
+<div class="mb-8">
+  <div class="flex gap-2 p-1 bg-neutral-800/50 rounded-lg border border-neutral-700/50 backdrop-blur-sm w-fit">
+    <button
+      id="experience-tab"
+      class={`tab-button px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+        activeTab === "experience" 
+          ? "active text-neutral-200 bg-neutral-700/50 shadow-sm" 
+          : "text-neutral-400 hover:text-neutral-200 hover:bg-neutral-700/30"
+      }`}
+      data-tab="experience"
+    >
+      Experiencia
+    </button>
+    <button
+      id="projects-tab"
+      class={`tab-button px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+        activeTab === "projects" 
+          ? "active text-neutral-200 bg-neutral-700/50 shadow-sm" 
+          : "text-neutral-400 hover:text-neutral-200 hover:bg-neutral-700/30"
+      }`}
+      data-tab="projects"
+    >
+      Proyectos
+    </button>
+    <button
+      id="studies-tab"
+      class={`tab-button px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+        activeTab === "studies" 
+          ? "active text-neutral-200 bg-neutral-700/50 shadow-sm" 
+          : "text-neutral-400 hover:text-neutral-200 hover:bg-neutral-700/30"
+      }`}
+      data-tab="studies"
+    >
+      Certificados
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const experienceTab = document.getElementById('experience-tab');
+    const projectsTab = document.getElementById('projects-tab');
+    const studiesTab = document.getElementById('studies-tab');
+    const experienceContent = document.getElementById('experience-content');
+    const projectsContent = document.getElementById('projects-content');
+    const studiesContent = document.getElementById('studies-content');
+    const timelineColumn = document.getElementById('timeline-column');
+
+    function switchTab(activeTab: string) {
+      // Remove active classes from all tabs
+      [experienceTab, projectsTab, studiesTab].forEach(tab => {
+        tab?.classList.remove('active', 'bg-neutral-700/50', 'shadow-sm', 'text-neutral-200');
+        tab?.classList.add('text-neutral-400');
+      });
+
+      // Hide all content
+      experienceContent?.classList.add('hidden');
+      projectsContent?.classList.add('hidden');
+      studiesContent?.classList.add('hidden');
+
+      if (activeTab === 'experience') {
+        experienceTab?.classList.add('active', 'bg-neutral-700/50', 'shadow-sm', 'text-neutral-200');
+        experienceTab?.classList.remove('text-neutral-400');
+        experienceContent?.classList.remove('hidden');
+        timelineColumn?.classList.remove('hidden'); // Show timeline column for experience
+      } else if (activeTab === 'projects') {
+        projectsTab?.classList.add('active', 'bg-neutral-700/50', 'shadow-sm', 'text-neutral-200');
+        projectsTab?.classList.remove('text-neutral-400');
+        projectsContent?.classList.remove('hidden');
+        timelineColumn?.classList.add('hidden'); // Hide timeline column for projects
+      } else if (activeTab === 'studies') {
+        studiesTab?.classList.add('active', 'bg-neutral-700/50', 'shadow-sm', 'text-neutral-200');
+        studiesTab?.classList.remove('text-neutral-400');
+        studiesContent?.classList.remove('hidden');
+        timelineColumn?.classList.remove('hidden'); // Show timeline column for studies
+      }
+    }
+
+    experienceTab?.addEventListener('click', () => switchTab('experience'));
+    projectsTab?.addEventListener('click', () => switchTab('projects'));
+    studiesTab?.addEventListener('click', () => switchTab('studies'));
+  });
+</script>

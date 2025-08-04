@@ -1,0 +1,221 @@
+---
+import Component from "../components/Component.astro";
+import Experience from "../components/experience/index.astro";
+import Projects from "../components/projects/index.astro";
+import Studies from "../components/studies/index.astro";
+import TabToggle from "../components/TabToggle.astro";
+import { EXPERIENCE } from "../data/experience";
+import { PROJECTS } from "../data/projects";
+import { STUDIES } from "../data/studies";
+import { SOCIALS } from "../data/socials";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Daniel Felipe">
+  <div class="relative hero z-10">
+    <div
+      class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
+    >
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header
+          class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24"
+        >
+          <div
+            class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left"
+          >
+            <img src="/avatar.webp" alt="Vadim Rusin" class="w-16 h-16" />
+            <div>
+              <a
+                href="/"
+                class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50"
+              >
+                <h1>Daniel Felipe</h1>
+              </a>
+              <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
+                Ingeniero de Sistemas
+              </h2>
+
+              <a
+                data-ccursor
+                href="./CV - Daniel Felipe Pérez.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="inline-flex transition-all border-neutral-700 hover:border-opacity-0 border-opacity-50 shadow rounded-md border backdrop-blur-xl bg-neutral-400/10 px-3 py-2.5 items-center text-white font-semibold group p-2 text-sm gap-x-2 mt-4"
+              >
+                <span>Ver Currículum</span>
+              </a>
+            </div>
+          </div>
+
+          {
+            SOCIALS.length && (
+              <ul
+                class="mt-8 flex items-center justify-center lg:justify-normal gap-x-5"
+                aria-label="Social media"
+              >
+                {SOCIALS.map((social) => (
+                  <li class="text-xs p-2 rounded" data-ccursor>
+                    <a
+                      class="block hover:text-slate-200"
+                      href={social.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`${social.name} (opens in a new tab)`}
+                    >
+                      <span class="sr-only">{social.name}</span>
+                      {<Component component={social.icon} />}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )
+          }
+        </header>
+
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <section
+            id="about"
+            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            aria-label="About me"
+          >
+            <div
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+            >
+              <h2
+                class="text-sm font-bold uppercase tracking-widest text-neutral-200 lg:sr-only"
+              >
+                About
+              </h2>
+            </div>
+            <div>
+              <div class="mb-4 space-y-4">
+                <p>
+                  Soy desarrollador full stack, con experiencia que abarca desde el diseño UI/UX
+                  hasta la implementación de arquitecturas de programación básicas, aplicando principios
+                  como SOLID y buenas prácticas de desarrollo. También me desempeño como desarrollador web
+                  y analista de datos, y soy desarrollador de videojuegos por hobby. Me considero una persona
+                  muy autodidacta y en constante aprendizaje, siempre explorando nuevas tecnologías y formas
+                  de mejorar mis habilidades.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            id="experience"
+            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            aria-label="Work experience and projects"
+          >
+            <!-- Tab Navigation -->
+            <TabToggle />
+            <!-- Timeline and Content Container -->
+            <div class="flex gap-4">
+              <!-- Timeline Column (only for Experience) -->
+              <div id="timeline-column" class="w-8 flex-shrink-0 relative">
+                <!-- Timeline line -->
+                <div class="absolute left-3 top-0 bottom-0 w-px bg-neutral-700/50"></div>
+              </div>
+
+              <!-- Content Column -->
+              <div class="flex-1">
+                <!-- Experience Content -->
+                <div id="experience-content" class="tab-content">
+                  <ol class="group/list space-y-12">
+                    {EXPERIENCE.map((experience, index) => (
+                      <li class="relative">
+                        <!-- Timeline dot positioned relative to this experience -->
+                        <div class="absolute left-[-45px] top-6 w-2 h-2 bg-neutral-400 rounded-full border-2 border-neutral-800 z-10"></div>
+                        <Experience {...experience} />
+                      </li>
+                    ))}
+                  </ol>
+
+                  <div class="mt-12">
+                    <a
+                      data-ccursor
+                      class="inline-flex items-center leading-tight text-neutral-200 font-semibold group p-2 rounded px-3"
+                      aria-label="View Full Résumé"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="./CV - Daniel Felipe Pérez.pdf"
+                    >
+                      <span>
+                        <span
+                          class="border-b border-transparent pb-px transition group-hover:border-neutral-300 motion-reduce:transition-none"
+                        >
+                          Ver todo
+                        </span>
+                        <span class="whitespace-nowrap">
+                          <span
+                            class="border-b border-transparent pb-px transition group-hover:border-neutral-300 motion-reduce:transition-none"
+                          >
+                            el resumen
+                          </span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                            aria-hidden="true"
+                            ><path
+                              fill-rule="evenodd"
+                              d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                              clip-rule="evenodd"></path></svg
+                          ></span
+                        ></span
+                      ></a
+                    >
+                  </div>
+                </div>
+
+                <!-- Projects Content (no timeline) -->
+                <div id="projects-content" class="tab-content hidden">
+                  <ol class="group/list space-y-12">
+                    {PROJECTS.map((project) => <Projects {...project} />)}
+                  </ol>
+                </div>
+
+                <!-- Studies Content (with timeline) -->
+                <div id="studies-content" class="tab-content hidden">
+                  <ol class="group/list space-y-12">
+                    {STUDIES.map((study, index) => (
+                      <li class="relative">
+                        <!-- Timeline dot positioned relative to this study -->
+                        <div class="absolute left-[-45px] top-6 w-2 h-2 bg-neutral-400 rounded-full border-2 border-neutral-800 z-10"></div>
+                        <Studies {...study} />
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style scoped>
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .hero {
+    background-image: url(/pattern.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+
+  /*
+  .hero {
+    animation: fadeIn 3s;
+  }
+   */
+</style>
