@@ -4,7 +4,7 @@ export const PROJECTS: ProjectProp[] = [
   {
     dates: "JULIO - 2025",
     title: "MonoLogo",
-    projectUrl: "https://vrus.vercel.app",
+    projectUrl: "https://mono-logo.vercel.app/",
     description:
       "Website con diseño moderno que remueve los fondos blancos de los logos, los recorta y te permite descargar sus 3 variantes en formato PNG con transparencia (A color, blanco y negro). Perfecto para equipos de Marketing y branding empresarial",
     technologies: [
