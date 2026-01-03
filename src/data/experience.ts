@@ -2,6 +2,21 @@ import type { Props as ExperienceProp } from "../components/experience/props";
 
 export const EXPERIENCE: ExperienceProp[] = [
   {
+    dates: "Octubre 2025 — Diciembre 2025",
+    title: "Desarrollador Backend (Práctica Universitaria)",
+    company: "Colombia Biomedical",
+    companyUrl: "https://sistole.co/",
+    description:
+      "Participé en el desarrollo backend de Sistole, una plataforma empresarial del sector salud para organizaciones IPS, soportando la gestión de citas, usuarios y flujos clínicos. Aquí diseñé e implementé APIs REST utilizando .NET Core y SQL Server, incluyendo operaciones CRUD, lógica de validación y manejo centralizado de excepciones.",
+    technologies: [
+      ".NET Core",
+      "SQL Server",
+      "API REST",
+      "Azure"
+    ],
+    logo: "/logos/sistole.jpg",
+  },
+  {
     dates: "Octubre 2024 — Junio 2025",
     title: "Administrador de bases de datos (Remoto)",
     company: "Universidad Horizonte",
