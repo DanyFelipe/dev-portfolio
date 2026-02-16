@@ -8,7 +8,7 @@ export const PROJECTS: ProjectProp[] = [
     description:
       "Aplicación web fullstack para una clínica veterinaria desarrollada con arquitectura desacoplada. El frontend consume contenido dinámico desde Strapi Cloud con una arquitectura Feature-Sliced Design (FSD). Implementa renderizado optimizado con Next.js y despliegue continuo en Vercel.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Strapi", "Node.js"],
-    image: "/images/vetstrapi.webp",
+    image: "/images/salud-animal.webp",
     status: "LIVE",
   },
   {
